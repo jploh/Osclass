@@ -20,7 +20,7 @@ oc-content/explain_queries.log
 oc-content/uploads/*
 
 # themes
-oc-content/themes/*
+#oc-content/themes/*
 !oc-content/themes/modern/
 !oc-content/themes/bender/
 !oc-content/themes/bender/css/main.css
