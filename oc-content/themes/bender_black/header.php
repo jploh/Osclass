@@ -48,7 +48,8 @@
                     <li><a href="<?php echo osc_register_account_url() ; ?>"><?php _e('Register for a free account', 'bender_black'); ?></a></li>
                 <?php }; ?>
             <?php } ?>
-            <li class="publish"><a href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Publish your ad for free", 'bender_black');?></a></li>
+<li><?php fbc_button(); ?></li>
+            <li class="publish"><a href="<?php echo osc_item_post_url_in_category() ; ?>"><?php _e("Can help or need help?", 'bender_black');?></a></li>
         </ul>
     </div>
     <?php if( osc_is_home_page() || osc_is_static_page() || osc_is_contact_page() ) { ?>

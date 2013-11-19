@@ -41,7 +41,7 @@ FUNCTIONS
     // install update options
     if( !function_exists('bender_blackBodyClass_theme_install') ) {
         function bender_black_theme_install() {
-            osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'bender_black'), 'bender_black_theme');
+            osc_set_preference('keyword_placeholder', __('ie. delivery truck', 'bender_black'), 'bender_black_theme');
             osc_set_preference('version', BENDER_BLACK_THEME_VERSION, 'bender_black_theme');
             osc_set_preference('footer_link', '1', 'bender_black_theme');
             osc_set_preference('donation', '0', 'bender_black_theme');

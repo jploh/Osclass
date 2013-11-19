@@ -42,7 +42,7 @@
             <?php } ?>
         <?php }; ?>
         <li class="publish">
-            <a href="<?php echo osc_item_post_url_in_category(); ?>"><?php _e("Publish your ad for free", 'bender_black');?></a>
+            <a href="<?php echo osc_item_post_url_in_category(); ?>"><?php _e("Can help or need help?", 'bender_black');?></a>
         </li>
     </ul>
     <ul>

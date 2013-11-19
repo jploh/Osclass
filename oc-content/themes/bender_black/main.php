@@ -27,9 +27,9 @@
 <?php osc_current_web_theme_path('header.php') ; ?>
 <div class="clear"></div>
 <div class="latest_ads">
-<h1><strong><?php _e('Latest job offers', 'bender_black') ; ?></strong></h1>
+<h1><strong><?php _e('Latest postings', 'bender_black') ; ?></strong></h1>
  <?php if( osc_count_latest_items() == 0) { ?>
-    <p class="empty"><?php _e("There aren't job offers available at this moment", 'bender_black'); ?></p>
+    <p class="empty"><?php _e("There aren't offers available at this moment", 'bender_black'); ?></p>
 <?php } else { ?>
     <div class="actions">
       <span class="doublebutton <?php echo $buttonClass; ?>">

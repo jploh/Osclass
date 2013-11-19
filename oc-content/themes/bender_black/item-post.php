@@ -34,6 +34,7 @@
 <?php osc_current_web_theme_path('header.php') ; ?>
 <?php ItemForm::location_javascript_new(); ?>
 <?php if(osc_images_enabled_at_items()) ItemForm::photos_javascript(); ?>
+
     <div class="form-container form-horizontal">
         <div class="resp-wrapper">
             <div class="header">
@@ -108,7 +109,8 @@
                             <div class="control-group">
                               <label class="control-label" for="region"><?php _e('Region', 'bender_black'); ?></label>
                               <div class="controls">
-                                <?php ItemForm::region_text(osc_user()); ?>
+                                <?php //ItemForm::region_text(osc_user()); ?>
+                                <?php ItemForm::region_select(osc_get_regions(), null, 'region', 's_name'); ?>
                               </div>
                             </div>
                             <div class="control-group">
@@ -117,7 +119,7 @@
                                 <?php ItemForm::city_text(osc_user()); ?>
                               </div>
                             </div>
-                            <div class="control-group">
+                            <div class="control-group" style="display:none;">
                               <label class="control-label" for="cityArea"><?php _e('City Area', 'bender_black'); ?></label>
                               <div class="controls">
                                 <?php ItemForm::city_area_text(osc_user()); ?>
@@ -133,7 +135,7 @@
                         <!-- seller info -->
                         <?php if(!osc_is_web_user_logged_in() ) { ?>
                         <div class="box seller_info">
-                            <h2><?php _e("Seller's information", 'bender_black'); ?></h2>
+                            <h2><?php _e("Lister's information", 'bender_black'); ?></h2>
                             <div class="control-group">
                               <label class="control-label" for="contactName"><?php _e('Name', 'bender_black'); ?></label>
                               <div class="controls">
